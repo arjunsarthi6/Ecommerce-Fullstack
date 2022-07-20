@@ -2,6 +2,7 @@ import { useQuery } from "urql";
 import { GET_PRODUCT_QUERY } from "../../lib/query";
 import { useRouter } from "next/router";
 import { DetailStyled, ProductInfo, Quantity, Buy } from "../../styles/ProductDetails";
+import {AiFillPlusCircle, AiFillMinusCircle} from "react-icons/ai";
 
 export default function ProductDetails() {
   //Fetch Graphql data
@@ -24,9 +25,9 @@ export default function ProductDetails() {
 
         <Quantity>
           <span>Quantity</span>
-          <button>Plus</button>
+          <button><AiFillMinusCircle /></button>
           <p>0</p>
-          <button>Minus</button>
+          <button><AiFillPlusCircle /></button>
         </Quantity>
         <Buy>Add to card</Buy>
       </ProductInfo>
