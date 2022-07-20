@@ -4,6 +4,7 @@ import { PRODUCT_QUERY } from "../lib/query";
 import Product from "../components/products";
 import { Gallery } from "../styles/Gallery";
 
+
 export default function Home() {
   // Fetch the results from Strapi
   const [results] = useQuery({ query: PRODUCT_QUERY });
@@ -20,7 +21,6 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Hello next</h1>
         <Gallery>
           {products.map((product) => (
             <Product key={product.attributes.slug} product={product} />
