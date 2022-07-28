@@ -8,10 +8,10 @@ export default function Nav(){
     <NavItems>
         <Link href={'/'}>ARJUN COLLECTIONS</Link>
         <div>
-            <FiShoppingBag />
+            <FiShoppingBag/>
             <h3>Cart</h3>
         </div>
     </NavItems>
 </NavStyles>
-    )
+    );
 }

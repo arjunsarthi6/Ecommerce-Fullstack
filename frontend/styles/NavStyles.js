@@ -17,10 +17,10 @@ export const NavItems = styled.div`
   align-items: center;
   justify-content: space-around;
   div {
-    display: flex;
-    flex-direction: column;
     margin-left: 3rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     cursor: pointer;
   }
